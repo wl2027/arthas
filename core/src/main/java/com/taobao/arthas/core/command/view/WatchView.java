@@ -21,7 +21,7 @@ public class WatchView extends ResultView<WatchModel> {
                 objectVO.needExpand() ? new ObjectView(model.getSizeLimit(), objectVO).draw() : objectVO.getObject());
 
         StringBuilder sb = new StringBuilder();
-        sb.append("aaa method=").append(model.getClassName()).append(".").append(model.getMethodName())
+        sb.append("method=").append(model.getClassName()).append(".").append(model.getMethodName())
                 .append(" location=").append(model.getAccessPoint()).append("\n");
         sb.append("ts=").append(DateUtils.formatDateTime(model.getTs()))
                 .append("; [cost=").append(model.getCost()).append("ms] result=").append(result).append("\n");
